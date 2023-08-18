@@ -10,12 +10,10 @@ import {
 } from "data/general";
 
 export const headerLinks = [
-  { path: `/`, text: "Αρχική" },
-  { path: `/services`, text: "Υπηρεσίες" },
-  { path: `/about`, text: "Βιογραφικό" },
-  { path: `/wiki`, text: "Wiki" },
-  { path: `/contact`, text: "Επικοινωνία" },
-  // { path: `/themes`, text: "Θέματα" },
+  { divId: `#home`, text: "Home" },
+  { divId: `#about`, text: "About" },
+  { divId: `#projects`, text: "Projects" },
+  { divId: `#contact`, text: "Contact" },
 ];
 
 export const headerInfo = [

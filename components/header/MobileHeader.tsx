@@ -31,12 +31,12 @@ const MobileHeader = () => {
       >
         <form method="dialog" className="flex flex-col items-center">
           <SectionTitle title="ΜΕΝΟΥ" />
-          {headerLinks.map(({ path, text }) => (
+          {headerLinks.map(({ divId, text }) => (
             <AppLink
               role="button"
               className="p-2 text-center text-2xl"
-              href={path}
-              key={path}
+              href={divId}
+              key={divId}
               onClick={() => (window as any).my_modal_5.close()}
             >
               {text}

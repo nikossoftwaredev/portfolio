@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import ServicesCarousel from "@/components/ServicesCarousel";
 import { BUSINESS_NAME, LAST_NAME, NAME } from "@/data/general";
 import { servicesInfo } from "@/data/services";
-import About from "components/About";
+import HeroSection from "@/components/HeroSection";
 import { Metadata } from "next";
 
 const staticKeywords = [
@@ -39,17 +39,12 @@ export const metadata: Metadata = {
   },
 };
 
-const Home = () => {
+const MainPage = () => {
   return (
-    <section>
-      <div className="w-full flex flex-col gap-4 pt-4">
-        <About />
-        <ServicesCarousel />
-        <SectionTitle title="Η ΘΕΡΑΠΕΥΤΡΙΑ" />
-        <Doctor />
-      </div>
-    </section>
+    <div className="w-full bg-base-200">
+      <HeroSection />
+    </div>
   );
 };
 
-export default Home;
+export default MainPage;

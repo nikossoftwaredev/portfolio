@@ -7,8 +7,6 @@ import AppointmentScroll from "@/components/header/AppointmentScroll";
 import { headerInfo, headerLinks } from "@/components/header/headerConfig";
 
 const Header = () => {
-  const pathname = usePathname();
-
   useEffect(() => {
     const theme = localStorage.getItem("theme");
 
@@ -17,52 +15,30 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-base-100">
+      <nav className="bg-base-100 shadow-md py-8 px-8 fixed top-0 w-full">
         <span className="md:hidden">
           <MobileHeader />
         </span>
         <span className="hidden md:block">
-          <div className="flex flex-wrap justify-center items-center  w-full mb-4 bg-base-300 gap-7  py-3 pr-1">
-            {headerInfo.map(({ href, icon, text }) => (
-              <Link
-                className="text-md flex gap-2 items-center"
-                href={href}
-                key={href}
-              >
-                {icon}
-                {text}
-              </Link>
-            ))}
-          </div>
-          <ul className="w-full flex flex-row gap-6 justify-center items-center mr-1">
-            <Link href="/" className="flex items-center animate-pulse-scale">
-              <img
-                src="/images/logo.png"
-                alt="Flowbite Logo"
-                className="w-[60px] h-[60px]"
-              />
+          <ul className="w-full flex flex-row gap-6 justify-center items-center ">
+            <Link
+              href="#home"
+              className="font-bold text-xl mr-auto animate-pulse-scale"
+            >
+              Nikos-dim.dev
             </Link>
-            {headerLinks.map((linkConfig) => {
-              let isActive = pathname === linkConfig.path;
-
-              if (linkConfig.path !== "/" && pathname) {
-                isActive = pathname === linkConfig.path;
-              }
-
+            {headerLinks.map(({ divId, text }) => {
               return (
-                <li key={linkConfig.path}>
+                <li key={divId}>
                   <Link
-                    href={linkConfig.path}
-                    className={`font-bold hover:text-accent ${
-                      isActive ? "text-accent" : ""
-                    }`}
+                    href={divId}
+                    className={`font-semibold text-xl hover:text-accent opacity-90`}
                   >
-                    {linkConfig.text}
+                    {text}
                   </Link>
                 </li>
               );
             })}
-            <AppointmentScroll />
           </ul>
         </span>
       </nav>
