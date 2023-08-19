@@ -9,7 +9,7 @@ const RootLayout = async ({ children }: PageProps): Promise<JSX.Element> => {
     <html lang="el" data-theme="light">
       <body className="text-base-content">
         <Header />
-        <main className="bg-base-200 px-4">{children}</main>
+        <main className="bg-base-200">{children}</main>
         <Footer />
       </body>
     </html>

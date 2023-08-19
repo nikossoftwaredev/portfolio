@@ -5,6 +5,9 @@ import { BUSINESS_NAME, LAST_NAME, NAME } from "@/data/general";
 import { servicesInfo } from "@/data/services";
 import HeroSection from "@/components/HeroSection";
 import { Metadata } from "next";
+import AboutSection from "@/components/AboutSection";
+import TechStack from "@/components/TechStack";
+import ProjectsSection from "@/components/ProjectsSection";
 
 const staticKeywords = [
   "πόνος στην πλάτη",
@@ -41,8 +44,11 @@ export const metadata: Metadata = {
 
 const MainPage = () => {
   return (
-    <div className="w-full bg-base-200">
+    <div className="w-full bg-gradient-to-b from-base-300">
       <HeroSection />
+      <TechStack />
+      <AboutSection />
+      <ProjectsSection />
     </div>
   );
 };

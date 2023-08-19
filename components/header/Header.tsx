@@ -1,10 +1,9 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import MobileHeader from "@/components/header/MobileHeader";
-import AppointmentScroll from "@/components/header/AppointmentScroll";
-import { headerInfo, headerLinks } from "@/components/header/headerConfig";
+import { headerLinks } from "@/components/header/headerConfig";
+import AppLink from "@/components/AppLink";
 
 const Header = () => {
   useEffect(() => {
@@ -21,21 +20,18 @@ const Header = () => {
         </span>
         <span className="hidden md:block">
           <ul className="w-full flex flex-row gap-6 justify-center items-center ">
-            <Link
+            <AppLink
               href="#home"
-              className="font-bold text-xl mr-auto animate-pulse-scale"
+              className="text-xl mr-auto animate-pulse-scale"
             >
-              Nikos-dim.dev
-            </Link>
+              ND
+            </AppLink>
             {headerLinks.map(({ divId, text }) => {
               return (
                 <li key={divId}>
-                  <Link
-                    href={divId}
-                    className={`font-semibold text-xl hover:text-accent opacity-90`}
-                  >
+                  <AppLink href={divId} className="text-xl opacity-90">
                     {text}
-                  </Link>
+                  </AppLink>
                 </li>
               );
             })}

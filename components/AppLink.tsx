@@ -7,7 +7,7 @@ const AppLink = (props: AppLinkProps): JSX.Element => {
   return (
     <Link
       {...props}
-      className={`text-accent hover:text-accent-focus font-bold ${props.className}`}
+      className={`hover:text-accent font-bold ${props.className} ease-in-out duration-300`}
     >
       {props.children}
     </Link>
