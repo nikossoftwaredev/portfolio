@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-base-100 shadow-md py-8 px-8 fixed top-0 w-full">
+      <nav className="bg-base-100 shadow-md py-8 px-8 fixed top-0 w-full z-10">
         <span className="md:hidden">
           <MobileHeader />
         </span>
