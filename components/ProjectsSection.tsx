@@ -2,6 +2,8 @@ import AppLink from "@/components/AppLink";
 import { BsLinkedin } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import Chip from "@/components/Chip";
+import { projects } from "@/data/projects";
+import SectionTitle from "@/components/SectionTitle";
 
 const ProjectCard = ({
   title,
@@ -54,18 +56,28 @@ const ProjectCard = ({
 
 const ProjectsSection = () => {
   return (
-    <section
-      id="projects"
-      className="w-full h-screen grid justify-center gap-10"
-    >
-      <ProjectCard
-        title="RAOUF ECOMMERCE 🛒"
-        githubLink=""
-        previewLink=""
-        tags={["React", "Next 13"]}
-        image="https://stefantopalovicdev.vercel.app/static/media/ecom.f10b3cdd799be85c19da.webp"
-        description="With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need."
-      />
+    <section id="projects" className="w-full">
+      <span className="w-full grid justify-center gap-6">
+        <span className="place-self-center w-2/4">
+          <SectionTitle title="PORTFOLIO" />
+          <p className="font-bold text-xl mt-2">
+            Each project is a unique piece of development 🧩
+          </p>
+        </span>
+        {projects.map(
+          ({ title, description, githubLink, image, previewLink, tags }) => (
+            <ProjectCard
+              key="title"
+              title={title}
+              githubLink={githubLink}
+              previewLink={previewLink}
+              tags={tags}
+              image={image}
+              description={description}
+            />
+          )
+        )}
+      </span>
     </section>
   );
 };

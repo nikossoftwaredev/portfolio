@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 const SectionTitle = ({
   title = "",
   className = "",
@@ -8,17 +10,9 @@ const SectionTitle = ({
   className?: string;
 }): JSX.Element => {
   return (
-    <div
-      className={`w-full flex items-center justify-${position} my-6 ${className}`}
-    >
-      <div
-        className={`sm:w-full md:w-2/4 flex items-center justify-${position}`}
-      >
-        <div className="h-0 border-t-2 flex-grow border-primary-content" />
-        <h2 className="font-black text-3xl text-center mx-3">{title}</h2>
-        <div className="h-0 border-t-2 flex-grow border-primary-content" />
-      </div>
-    </div>
+    <h2 className={twMerge(`text-accent font-bold text-xl`, className)}>
+      {title}
+    </h2>
   );
 };
 
