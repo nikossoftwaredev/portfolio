@@ -1,6 +1,5 @@
 import AppLink from "@/components/AppLink";
-import { BsLinkedin } from "react-icons/bs";
-import { BiLinkExternal } from "react-icons/bi";
+import { TbExternalLink, TbBrandGit } from "react-icons/tb";
 import Chip from "@/components/Chip";
 import { projects } from "@/data/projects";
 import SectionTitle from "@/components/SectionTitle";
@@ -10,7 +9,7 @@ const ProjectCard = ({
   description,
   image,
   githubLink,
-  previewLink,
+  previewLink = "",
   tags,
 }: {
   title: string;
@@ -24,11 +23,7 @@ const ProjectCard = ({
     <span className="place-self-center rounded-lg shadow-lg bg-base-100 w-2/4 h-96 max-h-96 p-4">
       <div className="grid grid-cols-3 items-center justify-center h-full gap-5">
         <span className="shadow-lg rounded-lg col-span-2 overflow-hidden h-full">
-          <img
-            className="object-contain w-full"
-            alt={title}
-            src="https://stefantopalovicdev.vercel.app/static/media/ecom.f10b3cdd799be85c19da.webp"
-          />
+          <img className="object-contain w-full" alt={title} src={image} />
         </span>
         <span className="flex flex-col items-center gap-2">
           <h2 className="font-bold"> {title}</h2>
@@ -39,14 +34,16 @@ const ProjectCard = ({
             ))}
           </span>
           <span className="flex gap-4 flex-row">
-            <AppLink href="https://www.linkedin.com/in/nikosdim97/">
+            <AppLink href={githubLink}>
               Code
-              <BsLinkedin size={20} />
+              <TbBrandGit size={20} />
             </AppLink>
-            <AppLink href="#contact">
-              Demo
-              <BiLinkExternal size={20} />
-            </AppLink>
+            {previewLink && (
+              <AppLink href={previewLink}>
+                Demo
+                <TbExternalLink size={20} />
+              </AppLink>
+            )}
           </span>
         </span>
       </div>
