@@ -1,13 +1,10 @@
-import Doctor from "@/components/Doctor";
-import SectionTitle from "@/components/SectionTitle";
-import ServicesCarousel from "@/components/ServicesCarousel";
 import { BUSINESS_NAME, LAST_NAME, NAME } from "@/data/general";
 import { servicesInfo } from "@/data/services";
 import HeroSection from "@/components/HeroSection";
 import { Metadata } from "next";
 import AboutSection from "@/components/AboutSection";
-import TechStack from "@/components/TechStack";
 import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 
 const staticKeywords = [
   "πόνος στην πλάτη",
@@ -44,11 +41,11 @@ export const metadata: Metadata = {
 
 const MainPage = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-base-300">
+    <div className="w-full bg-gradient-to-b from-base-300 flex flex-col gap-8">
       <HeroSection />
-      <TechStack />
       <AboutSection />
       <ProjectsSection />
+      <ContactSection />
     </div>
   );
 };

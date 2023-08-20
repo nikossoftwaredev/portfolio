@@ -35,7 +35,7 @@ export const techStackInfo = [
 ];
 
 const TechStack = () => (
-  <section className="flex items-center justify-center flex-col gap-5">
+  <section className="flex items-center justify-center flex-col gap-4">
     <p className="text-3xl font-bold"></p>
     <SectionTitle title="TECH STACK" />
     <div className="flex items-center justify-center gap-4">

@@ -1,4 +1,5 @@
 import AppLink from "@/components/AppLink";
+import TechStack from "@/components/TechStack";
 import { START_YEAR } from "@/data/general";
 import dayjs from "dayjs";
 import { BsGithub, BsLinkedin, BsShieldCheck } from "react-icons/bs";
@@ -7,10 +8,10 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="scroll-smooth w-full h-screen flex flex-col items-center justify-center"
+      className="w-full h-screen flex flex-col items-center justify-center"
     >
-      <div className="flex gap-5 items-center justify-center">
-        <span className="gap-5 flex flex-col">
+      <div className="flex gap-5 items-center justify-center flex-grow">
+        <span className="gap-5 flex flex-col item-center">
           <h1 className="text-6xl font-bold flex items-center gap-2">
             Full Stack Developer <BsShieldCheck />
           </h1>
@@ -38,6 +39,10 @@ const HeroSection = () => {
           ></img>
         </span>
       </div>
+
+      <span className="mt-auto mb-4">
+        <TechStack />
+      </span>
     </section>
   );
 };

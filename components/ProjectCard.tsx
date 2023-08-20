@@ -43,7 +43,7 @@ const ProjectCard = ({
             </AppLink>
             {previewLink && (
               <AppLink href={previewLink}>
-                Demo
+                Live Demo
                 <TbExternalLink size={20} />
               </AppLink>
             )}
