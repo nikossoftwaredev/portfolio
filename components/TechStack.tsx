@@ -12,26 +12,33 @@ import {
   TbBrandNextjs,
   TbBrandMongodb,
   TbBrandMysql,
+  TbBrandHtml5,
+  TbBrandAws,
 } from "react-icons/tb";
 
 export const techStackInfo = [
   {
-    name: "TbBrandReact",
-    icon: <TbBrandReact size={50} />,
+    name: "React",
+    icon: <TbBrandReact size={50} color="#0000ef" />,
   },
-  { name: "Javascript", icon: <TbBrandJavascript size={50} /> },
+  { name: "Javascript", icon: <TbBrandJavascript size={50} color="yellow" /> },
+  { name: "HTML", icon: <TbBrandHtml5 size={50} color="orange" /> },
   {
     name: "Docker",
-    icon: <TbBrandDocker size={50} />,
+    icon: <TbBrandDocker size={50} color="blue" />,
   },
-  { name: "Android", icon: <TbBrandAndroid size={50} /> },
-  { name: "Typescript", icon: <TbBrandTypescript size={50} /> },
-  { name: "GitBranch", icon: <TbBrandGit size={50} /> },
+  {
+    name: "AWS",
+    icon: <TbBrandAws size={50} color="orange" />,
+  },
+  { name: "Android", icon: <TbBrandAndroid size={50} color="green" /> },
+  { name: "Typescript", icon: <TbBrandTypescript size={50} color="blue" /> },
+  { name: "Git", icon: <TbBrandGit size={50} /> },
   { name: "Css3", icon: <TbBrandCss3 size={50} /> },
   { name: "Deno", icon: <TbBrandDeno size={50} /> },
-  { name: "Nextjs", icon: <TbBrandNextjs size={50} /> },
-  { name: "Mongodb", icon: <TbBrandMongodb size={50} /> },
-  { name: "Mysql", icon: <TbBrandMysql size={50} /> },
+  { name: "Nextjs", icon: <TbBrandNextjs size={50} color="green" /> },
+  { name: "Mongodb", icon: <TbBrandMongodb size={50} color="green" /> },
+  { name: "Mysql", icon: <TbBrandMysql size={50} color="blue" /> },
 ];
 
 const TechStack = () => (

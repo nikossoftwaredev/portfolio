@@ -9,10 +9,30 @@ export const projects = [
       "With a focus on simplicity and clean design, this site promotes chinese medicine services, and a way to book an appointment.",
   },
   {
-    title: "RAOUF ECOMMERCE 🛒",
+    title: "Riddles Tool 🖋️",
     githubLink: "",
     previewLink: "",
-    tags: ["React", "Next 13"],
+    tags: ["React", "Mobile"],
+    image:
+      "https://stefantopalovicdev.vercel.app/static/media/ecom.f10b3cdd799be85c19da.webp",
+    description:
+      "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
+  },
+  {
+    title: "Riddle App 🧠",
+    githubLink: "",
+    previewLink: "",
+    tags: ["Unity", "C#"],
+    image:
+      "https://stefantopalovicdev.vercel.app/static/media/ecom.f10b3cdd799be85c19da.webp",
+    description:
+      "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
+  },
+  {
+    title: "AI Dinos",
+    githubLink: "",
+    previewLink: "",
+    tags: ["JS", "Machine Learning", "Neural Networks", "P5"],
     image:
       "https://stefantopalovicdev.vercel.app/static/media/ecom.f10b3cdd799be85c19da.webp",
     description:

@@ -9,8 +9,8 @@ const AboutSection = () => {
       >
         <span>
           <img
-            className="rounded-lg"
-            src="https://stefantopalovicdev.vercel.app/static/media/about-img.62b47e7f183d4b4e9feb.webp"
+            className="rounded-lg h-full object-cover"
+            src="images/about.png"
           />
         </span>
         <span className="flex flex-col justify-center gap-4 h-full py-1">

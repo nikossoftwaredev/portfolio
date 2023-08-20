@@ -35,7 +35,7 @@ const HeroSection = () => {
         <span>
           <img
             src="images/portrait.jpg"
-            className="animate-morphing w-[300px] brightness-90 overflow-hidden"
+            className="animate-morphing w-[300px] brightness-90 overflow-hidden border-yellow-200 "
           ></img>
         </span>
       </div>
