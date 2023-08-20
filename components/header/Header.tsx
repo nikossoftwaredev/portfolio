@@ -24,7 +24,7 @@ const Header = () => {
               href="#home"
               className="text-xl mr-auto animate-pulse-scale"
             >
-              ND
+              <span className="text-accent">N</span>D
             </AppLink>
             {headerLinks.map(({ divId, text }) => {
               return (

@@ -14,6 +14,7 @@ export const headerLinks = [
   { divId: `#about`, text: "About" },
   { divId: `#projects`, text: "Projects" },
   { divId: `#contact`, text: "Contact" },
+  { divId: `/themes`, text: "Themes" },
 ];
 
 export const headerInfo = [
