@@ -1,6 +1,6 @@
 "use client";
 import AppLink from "@/components/AppLink";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 
 const ALL_THEMES = [
   "light",
@@ -77,17 +77,11 @@ const Theme = ({ theme }: { theme: string }) => {
 };
 
 const Themes = () => {
-  const [themes, setThemes] = useState(ALL_THEMES);
+  const selectedTheme = localStorage.getItem("theme") || "retro";
 
-  useEffect(() => {
-    const selectedTheme = localStorage.getItem("theme") || "retro";
-
-    setThemes([
-      selectedTheme,
-      ...ALL_THEMES.filter((theme) => theme !== selectedTheme),
-    ]);
-    return;
-  }, []);
+  const themes = useMemo(() => {
+    return Array.from(new Set([selectedTheme, ...ALL_THEMES]));
+  }, [selectedTheme]);
 
   return (
     <section className="grid gap-4 grid-cols-1 p-2 justify-center items-center">

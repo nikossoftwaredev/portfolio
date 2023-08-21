@@ -41,11 +41,13 @@ export const metadata: Metadata = {
 
 const MainPage = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-base-300 flex flex-col gap-8">
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
+    <div className="w-full bg-gradient-to-b from-base-300 flex justify-center">
+      <span className="flex flex-col gap-24 w-2/4 pb-10">
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </span>
     </div>
   );
 };

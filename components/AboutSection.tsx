@@ -2,17 +2,13 @@ import SectionTitle from "@/components/SectionTitle";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="w-full h-screen flex flex-col items-center">
-      <div
-        id="about"
-        className="w-3/4 h-max grid grid-cols-2 gap-8 items-start mt-4"
-      >
-        <span>
-          <img
-            className="rounded-lg h-full object-cover"
-            src="images/about.png"
-          />
-        </span>
+    <section id="about" className="w-full flex flex-col items-center">
+      <div className="h-max grid grid-cols-2 gap-8 items-start mt-4">
+        <img
+          className="rounded-lg h-full object-cover"
+          alt="Linked in screenshot"
+          src="images/about.png"
+        />
         <span className="flex flex-col justify-center gap-4 h-full py-1">
           <SectionTitle title="ABOUT ME" />
           <h2 className="font-bold text-3xl">

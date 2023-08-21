@@ -39,7 +39,6 @@ const HeroSection = () => {
           ></img>
         </span>
       </div>
-
       <span className="mt-auto mb-4">
         <TechStack />
       </span>

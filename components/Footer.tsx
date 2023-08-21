@@ -5,7 +5,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 const Footer = (): JSX.Element => {
   return (
     <footer className="bg-base-300 flex items-center flex-col">
-      <span className="w-2/3 flex gap-4 items-start justify-start py-10">
+      <span className="w-3/4 flex gap-4 items-start justify-start py-10">
         <p className="font-bold text-xl">
           Copyright © {dayjs().format("YYYY")}. All rights are reserved
         </p>

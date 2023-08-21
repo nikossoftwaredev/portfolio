@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="w-full">
       <span className="w-full grid justify-center gap-6">
-        <span className="place-self-center w-2/4">
+        <span className="place-self-start">
           <SectionTitle title="PORTFOLIO" />
           <p className="font-bold text-xl mt-2">
             Each project is a unique piece of development 🧩
