@@ -31,9 +31,9 @@ const ContactSection = () => {
               href={ci.href}
               className="flex gap-4 items-center justify-start"
             >
-              <BubbleIcon icon={ci.icon} name={ci.title} />
+              <BubbleIcon icon={ci.icon} name={ci.title} hasAnimation={false} />
               <span key={ci.title}>
-                <p className="font-bold text-lg"> {ci.title}</p>
+                <p className="text-lg"> {ci.title}</p>
                 <p className="text-lg"> {ci.description}</p>
               </span>
             </AppLink>

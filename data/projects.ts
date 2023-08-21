@@ -9,6 +9,15 @@ export const projects = [
       "With a focus on simplicity and clean design, this site promotes chinese medicine services, and a way to book an appointment.",
   },
   {
+    title: "Open AI Blog",
+    githubLink: "https://github.com/nikossoftwaredev/my-blog",
+    previewLink: "https://nikos-blog.netlify.app/blogs",
+    tags: ["OpenAI", "React", "Next 13"],
+    image: "images/projects/nikos-blog.netlify.app_blogs.webp",
+    description:
+      "An AI blog that uses the OpenAI API to generate content. The blog is built with Next.js and Tailwind CSS.",
+  },
+  {
     title: "Riddles Tool 🖋️",
     githubLink: "",
     previewLink: "",
