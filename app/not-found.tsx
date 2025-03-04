@@ -1,4 +1,4 @@
-import ButtonLink from "@/components/ButtonLink";
+import ButtonLink from "@/app/_components/ButtonLink";
 
 export default function NotFound() {
   return (

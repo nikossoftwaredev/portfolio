@@ -1,55 +1,32 @@
-import Doctor from "@/components/Doctor";
-import SectionTitle from "@/components/SectionTitle";
-import ServicesCarousel from "@/components/ServicesCarousel";
-import { BUSINESS_NAME, LAST_NAME, NAME } from "@/data/general";
-import { servicesInfo } from "@/data/services";
-import About from "components/About";
+import { BUSINESS_NAME } from "@/app/_data/general";
+import HeroSection from "@/app/_components/HeroSection";
 import { Metadata } from "next";
-
-const staticKeywords = [
-  "πόνος στην πλάτη",
-  "βελονισμός ηλιούπολη",
-  "πονος στον αυχενα",
-  "πονος",
-  "πονος ηλιούπολη",
-  NAME,
-  LAST_NAME,
-];
+import AboutSection from "@/app/_components/AboutSection";
+import ProjectsSection from "@/app/_components/ProjectsSection";
+import ContactSection from "@/app/_components/ContactSection";
 
 const description =
-  "Στο I Ching : balance way παρέχουμε ένα πλήρες εφαρμοσμένο θεραπευτικό πρόγραμμα το οποίο επιδιώκει την ισορροπία του ανθρώπινου οργανισμού.  Εκτός από συγκεκριμένες εσωτερικές και εξωτερικές παθήσεις, η ολιστική προσέγγιση και η κινέζικη ιατρική συμπληρώνουν έναν υγιή και ισορροπημένο τρόπο ζωής.";
-
-const keywords = staticKeywords
-  .concat(
-    servicesInfo.map((service) => `${service.title}: ${service.subtitle}`)
-  )
-  .join(", ");
+  "Nikos Dimitrakopoulos is a full stack developer based in Athens, Greece. He is a passionate developer with a focus on building scalable and efficient web applications.";
 
 export const metadata: Metadata = {
   title: BUSINESS_NAME,
   description,
-  keywords,
   viewport: "width=device-width, initial-scale=1",
   applicationName: BUSINESS_NAME,
   robots: "index, follow",
-  openGraph: {
-    title: BUSINESS_NAME,
-    description,
-    images: "https://ichingbalance.gr/images/main_area.webp",
-  },
 };
 
-const Home = () => {
+const MainPage = () => {
   return (
-    <section>
-      <div className="w-full flex flex-col gap-4 pt-4">
-        <About />
-        <ServicesCarousel />
-        <SectionTitle title="Η ΘΕΡΑΠΕΥΤΡΙΑ" />
-        <Doctor />
-      </div>
-    </section>
+    <div className="w-full bg-gradient-to-b from-base-300 flex justify-center">
+      <span className="flex flex-col space-y-24 py-2  max-w-2xl">
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <ContactSection />
+      </span>
+    </div>
   );
 };
 
-export default Home;
+export default MainPage;

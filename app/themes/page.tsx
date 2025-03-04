@@ -1,4 +1,4 @@
-import Themes from "@/components/Themes";
+import Themes from "@/app/_components/Themes";
 
 const ThemePage = () => {
   return (

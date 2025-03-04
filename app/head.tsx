@@ -1,7 +1,7 @@
-import { BUSINESS_NAME } from "@/data/general";
+import { BUSINESS_NAME } from "@/app/_data/general";
 import Head from "next/head";
 
-const MainPage = () => {
+const HeadComponent = () => {
   return (
     <Head>
       <title>{BUSINESS_NAME}</title>
@@ -10,4 +10,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default HeadComponent;
