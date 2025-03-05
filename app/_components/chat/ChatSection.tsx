@@ -12,20 +12,25 @@ const ChatSection = () => {
     api: "/api/chat", // Point to your server-side API route
   });
 
-  console.log(messages);
-
   return (
     <section id="chat" className="w-full flex flex-col items-start">
       <SectionTitle title="AI CHAT" />
       <div className="w-full h-[500px] flex flex-col justify-end bg-base-300 card p-2">
         <div className="w-full h-full flex flex-col items-start gap-2 overflow-y-auto ">
           {messages.map((message, index) => (
-            <Message
-              key={index}
-              content={message.content}
-              isUserMessage={index % 2 === 0}
-            />
+            <Message key={index} message={message} />
           ))}
+          {status !== "ready" && (
+            <Message
+              message={{
+                content: "",
+                id: "1111",
+                role: "assistant",
+                createdAt: new Date(),
+                parts: [],
+              }}
+            />
+          )}
           {messages.length === 0 && (
             <div className="flex-1 flex flex-col items-center justify-center gap-2 w-full">
               <FaRobot className="size-8 text-blue-500" />
@@ -43,7 +48,7 @@ const ChatSection = () => {
           <TextField
             value={input}
             onKeyDown={(e) => {
-              if (e.key === "Enter") {
+              if (e.key === "Enter" && status === "ready") {
                 handleSubmit();
               }
             }}

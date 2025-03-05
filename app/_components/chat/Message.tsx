@@ -1,12 +1,16 @@
 import { FaRobot, FaUser } from "react-icons/fa";
 import { cn } from "@/app/_lib/utils";
+import { type UIMessage } from "ai";
 
 interface MessageProps {
-  content: string;
-  isUserMessage: boolean;
+  message: UIMessage;
 }
 
-export const Message = ({ content, isUserMessage }: MessageProps) => {
+export const Message = ({ message }: MessageProps) => {
+  const isUserMessage = message.role === "user";
+  const formattedTime = message.createdAt
+    ? message.createdAt.toLocaleTimeString()
+    : "";
   return (
     <div className="w-full flex items-start">
       <div
@@ -28,7 +32,14 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
             }
           )}
         >
-          {content}
+          {message.content ? (
+            message.content
+          ) : (
+            <span className="typing-indicator" />
+          )}
+          <div className="flex justify-between text-xs text-zinc-500 mt-1">
+            <span className="ml-auto">{formattedTime}</span>
+          </div>
         </div>
       </div>
     </div>
