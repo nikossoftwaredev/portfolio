@@ -30,8 +30,8 @@ const MainPage = () => {
         <AboutSection />
         <ProjectsSection />
         <ResumeSection />
-        <ContactSection />
         <ChatSection />
+        <ContactSection />
       </span>
     </div>
   );
