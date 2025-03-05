@@ -1,18 +1,25 @@
 "use client";
+import React from "react";
 
-const Chip = ({
-  title,
-  onClick,
-}: {
+interface ChipProps {
   title: string;
+  color?: string; // Hex color value
   onClick?: (title: string) => void;
-}) => (
-  <div
-    className={` border-neutral-content border-2 flex cursor-pointer items-center justify-between rounded-2xl h-8 bg-base-300 hover:bg-accent px-2 text-sm font-semibold shadow-none transition-[opacity] duration-300 ease-linear `}
-    onClick={() => onClick && onClick(title)}
-  >
-    {title}
-  </div>
-);
+}
+
+const Chip: React.FC<ChipProps> = ({ title, color = "#13AD9B", onClick }) => {
+  return (
+    <div
+      className="flex cursor-pointer items-center justify-between rounded-2xl h-8 px-4 text-xs shadow-none transition-opacity duration-300 ease-linear"
+      style={{
+        color: color, // Text color is the given hex color
+        backgroundColor: `color-mix(in srgb, ${color}, black 80%)`, // Darker background version of the color
+      }}
+      onClick={() => onClick && onClick(title)}
+    >
+      {title}
+    </div>
+  );
+};
 
 export default Chip;

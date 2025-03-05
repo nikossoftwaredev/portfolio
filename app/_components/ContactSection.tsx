@@ -24,7 +24,7 @@ const ContactSection = () => {
       <span className="flex flex-col justify-center gap-4 h-full py-1">
         <SectionTitle title="CONTACT" />
         <h2 className="font-bold text-3xl">Don&apos;t be shy! Hit me up! 👇</h2>
-        <span className="flex justify-start items-start gap-4">
+        <span className="flex flex-wrap justify-start items-start gap-4">
           {contactInfo.map((ci) => (
             <AppLink
               key={ci.title}

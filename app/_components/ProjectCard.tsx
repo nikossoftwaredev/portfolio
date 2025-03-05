@@ -1,6 +1,7 @@
 import AppLink from "@/app/_components/AppLink";
 import { TbExternalLink, TbBrandGit } from "react-icons/tb";
 import Chip from "@/app/_components/Chip";
+import { Project } from "@/app/_data/projects";
 
 const ProjectCard = ({
   title,
@@ -9,49 +10,37 @@ const ProjectCard = ({
   githubLink,
   previewLink = "",
   tags,
-}: {
-  title: string;
-  description: string;
-  image: string;
-  githubLink: string;
-  previewLink: string;
-  tags: string[];
-}) => {
-  return (
-    <span className="place-self-center rounded-lg shadow-lg bg-base-100 h-96 max-h-96 p-4">
-      <div className="grid grid-cols-3 items-center justify-center h-full gap-5">
-        <span className="shadow-lg rounded-lg col-span-2 overflow-hidden h-full">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="object-cover w-full transition-transform duration-[7000ms] ease-out transform hover:translate-y-[-70%]"
-            alt={title}
-            src={image}
-          />
+  chipColor,
+}: Project) => (
+  <span className="card bg-base-100 relative shadow-xl">
+    <div className="w-full h-48 overflow-hidden rounded-t-lg relative">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="object-cover w-full h-full" alt={title} src={image} />
+      <span className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+        <span className="flex gap-2 flex-wrap">
+          {tags.map((tag) => (
+            <Chip key={tag} title={tag} color={chipColor} />
+          ))}
         </span>
-        <span className="flex flex-col items-center gap-2">
-          <h2 className="font-bold text-xl"> {title}</h2>
-          <p className="font-medium text-lg">{description}</p>
-          <span className="flex gap-4 flex-wrap">
-            {tags.map((tag) => (
-              <Chip key={tag} title={tag} />
-            ))}
-          </span>
-          <span className="flex gap-4 flex-row">
-            <AppLink href={githubLink}>
-              Code
-              <TbBrandGit size={20} />
-            </AppLink>
-            {previewLink && (
-              <AppLink href={previewLink}>
-                Demo
-                <TbExternalLink size={20} />
-              </AppLink>
-            )}
-          </span>
-        </span>
+      </span>
+    </div>
+    <div className="card-body">
+      <div className="card-title text-center w-full">{title}</div>
+      <p className="font-medium text-lg">{description}</p>
+      <div className="card-actions justify-end">
+        <AppLink href={githubLink}>
+          Code
+          <TbBrandGit size={20} />
+        </AppLink>
+        {previewLink && (
+          <AppLink href={previewLink}>
+            Demo
+            <TbExternalLink size={20} />
+          </AppLink>
+        )}
       </div>
-    </span>
-  );
-};
+    </div>
+  </span>
+);
 
 export default ProjectCard;

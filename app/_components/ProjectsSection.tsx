@@ -12,19 +12,11 @@ const ProjectsSection = () => {
             Each project is a unique piece of development 🧩
           </p>
         </span>
-        {PROJECTS.map(
-          ({ title, description, githubLink, image, previewLink, tags }) => (
-            <ProjectCard
-              key={title}
-              title={title}
-              githubLink={githubLink}
-              previewLink={previewLink}
-              tags={tags}
-              image={image}
-              description={description}
-            />
-          )
-        )}
+        <span className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {PROJECTS.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </span>
       </span>
     </section>
   );
