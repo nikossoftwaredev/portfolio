@@ -23,19 +23,20 @@ const contactInfo = [
 const recommendations = [
   {
     id: 1,
-    text: "I had the pleasure of working with Nikos on several projects, and I'm consistently impressed by his technical skills and problem-solving abilities. He's an exceptional developer who not only writes clean, efficient code but also brings innovative solutions to complex challenges. His deep knowledge of React and Node.js helped our team deliver projects ahead of schedule. Beyond his technical expertise, Nikos is a great team player who communicates effectively and is always willing to help others. Any team would be fortunate to have him!",
+    text: "Kindly writing to recommend Nikos for any full-stack opportunity that aligns with his skill-set and experience. During his time at Zap, Nikos consistently demonstrated an eagerness to learn and the ability to adapt swiftly to new challenges. He took ownership of projects and was always keen to acquire new knowledge.",
     author: {
-      name: "Maria Johnson",
-      title: "Senior Engineering Manager",
-      company: "TechInnovate Solutions",
-      image: "https://randomuser.me/api/portraits/women/32.jpg",
+      name: "Jacob Devore",
+      title: "CFO at Zap",
+      company: "Zap",
+      image:
+        "https://pbs.twimg.com/profile_images/1502888845188210695/b4Bqke-o_400x400.jpg",
       linkedIn: "https://linkedin.com/in/",
     },
     date: "February 2025",
   },
   {
     id: 2,
-    text: "Nikos is one of the most talented developers I've had the opportunity to work with. His attention to detail and commitment to writing maintainable, well-documented code sets him apart. During our collaboration on a complex e-commerce platform, his frontend expertise with React and TypeScript was instrumental in creating an exceptional user experience. Nikos also demonstrates remarkable leadership qualities, mentoring junior developers and contributing valuable insights during planning sessions. I highly recommend Nikos for any development role - he'll undoubtedly be an asset to any team.",
+    text: "Nikos is one of the most talented developers I've had the opportunity to work with. His attention to detail and commitment to writing maintainable",
     author: {
       name: "Alex Chen",
       title: "CTO",
