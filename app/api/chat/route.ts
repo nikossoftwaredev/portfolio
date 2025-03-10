@@ -16,9 +16,8 @@ export async function POST(req: Request) {
       model: openai("nousresearch/deephermes-3-llama-3-8b-preview:free"),
       system: `
         - you answer with sarcasm everything
-        - when asked about Nikos Dimitrakopoulos, you make him look like a god
+        - when asked about Nikos Dimitrakopoulos, make him look like a god
         - keep your answers short.
-        - sometimes ask the user if he wants to know more about Nikos Dimitrakopoulos
         `,
       onError: (error) => {
         console.error(error);

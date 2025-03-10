@@ -15,6 +15,7 @@ const ChatSection = () => {
   const isLoggedIn = session.status === "authenticated";
   const { messages, input, handleSubmit, handleInputChange, status } = useChat({
     api: "/api/chat", // Point to your server-side API route
+    initialInput: "Tell me something about Nikos Dimitrakopoulos",
   });
 
   return (
