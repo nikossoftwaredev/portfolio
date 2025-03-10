@@ -31,7 +31,9 @@ export async function POST(req: Request) {
     console.error(error);
 
     return NextResponse.json(
-      { error: "Error fetching response from DeepSeek-R1" },
+      {
+        error: `Error fetching response from DeepSeek-R1 ${process.env.OPENAI_API_KEY}`,
+      },
       { status: 500 }
     );
   }
