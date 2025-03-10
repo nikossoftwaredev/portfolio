@@ -26,25 +26,25 @@ const recommendations = [
     text: "Kindly writing to recommend Nikos for any full-stack opportunity that aligns with his skill-set and experience. During his time at Zap, Nikos consistently demonstrated an eagerness to learn and the ability to adapt swiftly to new challenges. He took ownership of projects and was always keen to acquire new knowledge.",
     author: {
       name: "Jacob Devore",
-      title: "CFO at Zap",
+      title: "CFO",
       company: "Zap",
       image:
         "https://pbs.twimg.com/profile_images/1502888845188210695/b4Bqke-o_400x400.jpg",
-      linkedIn: "https://linkedin.com/in/",
+      linkedIn: "https://www.linkedin.com/in/jacobadevore/",
     },
     date: "February 2025",
   },
   {
     id: 2,
-    text: "Nikos is one of the most talented developers I've had the opportunity to work with. His attention to detail and commitment to writing maintainable",
+    text: "Nikos is one of the most talented developers I've had the opportunity to work with. His attention to detail and commitment to writing maintainable. He always goes the extra mile to make sure the project is successful.",
     author: {
-      name: "Alex Chen",
-      title: "CTO",
-      company: "WebSphere Digital",
+      name: "Manolis Thalassinos",
+      title: "Team Lead",
+      company: "i4 Energy",
       image: "https://randomuser.me/api/portraits/men/44.jpg",
-      linkedIn: "https://linkedin.com/in/",
+      linkedIn: "https://www.linkedin.com/in/manolis-thalassinos-857590226/",
     },
-    date: "March 2023",
+    date: "December 2024",
   },
 ];
 
