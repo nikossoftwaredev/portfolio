@@ -16,7 +16,8 @@ const ProjectCard = ({
     <div className="w-full h-48 overflow-hidden rounded-t-lg relative">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        className="object-cover w-full transition-transform duration-1000 ease-out transform hover:translate-y-[-70%]"
+        className="object-cover w-full transition-transform  hover:translate-y-[-70%]"
+        style={{ transition: "transform 5s ease-out" }}
         alt={title}
         src={image}
       />
