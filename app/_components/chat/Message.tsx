@@ -22,7 +22,7 @@ export const Message = ({ message, session }: MessageProps) => {
         })}
       >
         {isUserMessage ? (
-          <div className="size-8 shrink-0 rounded-full border bg-teal-200 text-teal-700 p-1 ">
+          <div className="size-8 shrink-0 rounded-full border bg-primary text-primary-content p-1 ">
             <img
               className="rounded-full w-full"
               src={session?.user?.image || ""}
@@ -36,7 +36,7 @@ export const Message = ({ message, session }: MessageProps) => {
           className={cn(
             "text-sm font-normal  text-zinc-700 p-2 rounded-lg max-w-[500px] break-words w-full",
             {
-              "bg-teal-200": isUserMessage,
+              "bg-primary": isUserMessage,
               "bg-blue-200": !isUserMessage,
             }
           )}

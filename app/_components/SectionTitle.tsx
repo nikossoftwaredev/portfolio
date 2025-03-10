@@ -10,7 +10,7 @@ const SectionTitle = ({
   className?: string;
 }): JSX.Element => {
   return (
-    <h2 className={twMerge(`text-accent font-bold text-xl`, className)}>
+    <h2 className={twMerge(`text-primary font-bold text-xl`, className)}>
       {title}
     </h2>
   );
