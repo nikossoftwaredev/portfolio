@@ -40,7 +40,7 @@ const ProjectCard = ({
           </AppLink>
         )}
         {previewLink && (
-          <AppLink href={previewLink}>
+          <AppLink href={previewLink} target="_blank">
             Demo
             <FaLink size={20} />
           </AppLink>
