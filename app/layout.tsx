@@ -1,20 +1,22 @@
 import "./global.css";
 import "react-perfect-scrollbar/dist/css/styles.css";
-import Footer from "components/Footer";
-import Header from "@/components/header/Header";
-import AppointmentForm from "components/AppointmentForm";
-import { PageProps } from "types/general";
+import Footer from "@/app/_components/Footer";
+import Header from "@/app/_components/header/Header";
+import { Providers } from "@/app/_components/providers"; // Ensure Providers is correctly imported
 
-const RootLayout = async ({ children }: PageProps): Promise<JSX.Element> => {
+const RootLayout = async ({
+  children,
+}: {
+  children: React.ReactNode;
+}): Promise<JSX.Element> => {
   return (
-    <html lang="el" data-theme="retro">
-      <body className="text-base-content">
-        <Header />
-        <main className="bg-base-100 px-4">
-          {children}
-          <AppointmentForm />
-        </main>
-        <Footer />
+    <html lang="el" data-theme="forest">
+      <body className="text-base-content bg-base-100">
+        <Providers>
+          <Header />
+          <main className="bg-base-200">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -6,7 +6,6 @@
     "WallabyJs.quokka-vscode",
     "eamodio.gitlens",
     "yoavbls.pretty-ts-errors",
-    "bradlc.vscode-tailwindcss",
-    "kuscamara.remove-unused-imports"
+    "bradlc.vscode-tailwindcss"
   ]
 }
