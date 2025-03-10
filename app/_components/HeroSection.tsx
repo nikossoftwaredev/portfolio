@@ -24,7 +24,7 @@ const HeroSection = () => {
             <AppLink href="https://www.linkedin.com/in/nikosdim97/">
               <BsLinkedin size={40} />
             </AppLink>
-            <AppLink href="#contact">
+            <AppLink href="https://github.com/nikossoftwaredev">
               <BsGithub size={40} />
             </AppLink>
           </span>

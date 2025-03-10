@@ -6,6 +6,7 @@ import ProjectsSection from "@/app/_components/ProjectsSection";
 import ContactSection from "@/app/_components/ContactSection";
 import { ResumeSection } from "@/app/_components/ResumeSection";
 import ChatSection from "@/app/_components/chat/ChatSection";
+import RecommendationsSection from "@/app/_components/RecommendationsSection";
 
 const description =
   "Nikos Dimitrakopoulos is a full stack developer based in Athens, Greece. He is a passionate developer with a focus on building scalable and efficient web applications.";
@@ -31,6 +32,7 @@ const MainPage = () => {
         <ProjectsSection />
         <ResumeSection />
         <ChatSection />
+        <RecommendationsSection />
         <ContactSection />
       </span>
     </div>

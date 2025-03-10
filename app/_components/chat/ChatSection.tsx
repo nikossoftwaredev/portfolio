@@ -47,8 +47,8 @@ const ChatSection = () => {
             </div>
           )}
           {!isLoggedIn && (
-            <div className="flex-1 flex flex-col items-center justify-center gap-2 w-full">
-              <FaLock className=" text-green-600 size-12" />
+            <div className="flex-1 flex flex-col items-center justify-center gap-2 w-full p-6">
+              <FaLock className=" text-green-600 size-12 " />
               <h3 className="text-xl font-semibold text-base-content">
                 Authentication Required
               </h3>
@@ -56,9 +56,7 @@ const ChatSection = () => {
                 Please sign in to access the AI chat assistant. Your
                 conversations will be private and secure.
               </p>
-
               <LoginButton />
-
               <p className="text-xs text-base-content/50 mt-4">
                 We only use authentication for demo purposes. No personal data
                 is shared with third parties.

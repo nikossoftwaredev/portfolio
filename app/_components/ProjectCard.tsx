@@ -32,10 +32,12 @@ const ProjectCard = ({
       <div className="card-title text-center w-full">{title}</div>
       <p className="font-medium text-lg">{description}</p>
       <div className="card-actions justify-end gap-4">
-        <AppLink href={githubLink}>
-          Code
-          <FaGithub size={20} />
-        </AppLink>
+        {githubLink && (
+          <AppLink href={githubLink}>
+            Code
+            <FaGithub size={20} />
+          </AppLink>
+        )}
         {previewLink && (
           <AppLink href={previewLink}>
             Demo
