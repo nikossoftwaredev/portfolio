@@ -19,6 +19,15 @@ export const PROJECTS: Project[] = [
     chipColor: "#DF3B7D",
   },
   {
+    title: "Spotify Clone",
+    githubLink: "https://github.com/nikossoftwaredev/spotify-clone",
+    previewLink: "https://spotify-clone-nikos.vercel.app/",
+    tags: ["Next", "SQL"],
+    image: "images/projects/www.micropump.fun_.png",
+    description: "A spotify clone includes payments",
+    chipColor: "#DF3B7D",
+  },
+  {
     title: "I Ching : Balance Way ☯️",
     githubLink: "https://github.com/nikossoftwaredev/i-ching",
     previewLink: "https://ichingbalance.gr/",
