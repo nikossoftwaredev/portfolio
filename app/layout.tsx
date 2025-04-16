@@ -4,7 +4,7 @@ import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/header/Header";
 import { Providers } from "@/app/_components/providers"; // Ensure Providers is correctly imported
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/auth-options";
 
 const RootLayout = async ({
   children,
