@@ -1,1 +1,1 @@
-[live here](https://ichingbalance.gr/en)
+[live here]([https://ichingbalance.gr/en](https://ndimitrakopoulos.vercel.app/))
