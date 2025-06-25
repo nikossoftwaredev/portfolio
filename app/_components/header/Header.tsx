@@ -8,7 +8,7 @@ import { LoginButton } from "@/app/_components/LoginButton";
 const Header = () => {
   return (
     <header>
-      <nav className="bg-base-100 shadow-md fixed top-0 w-full z-10 py-2 px-8">
+      <nav className="bg-base-100 shadow-md fixed top-0 left-0 right-0 w-full z-50 py-2 px-8">
         <span className="md:hidden">
           <MobileHeader />
         </span>

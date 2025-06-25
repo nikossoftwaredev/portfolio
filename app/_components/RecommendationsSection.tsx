@@ -23,7 +23,7 @@ const contactInfo = [
 const recommendations = [
   {
     id: 1,
-    text: "Kindly writing to recommend Nikos for any full-stack opportunity that aligns with his skill-set and experience. During his time at Zap, Nikos consistently demonstrated an eagerness to learn and the ability to adapt swiftly to new challenges. He took ownership of projects and was always keen to acquire new knowledge.",
+    text: "Kindly writing to recommend Nikos for any full stack opportunity that aligns with his skill-set and experience. During his time at Zap, Nikos consistently demonstrated an eagerness to learn and the ability to adapt swiftly to new challenges. He took ownership of projects and was always keen to acquire new knowledge.",
     author: {
       name: "Jacob Devore",
       title: "CFO",

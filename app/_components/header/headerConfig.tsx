@@ -1,6 +1,5 @@
 export const headerLinks = [
-  { divId: `/`, text: "Home" },
   { divId: `#projects`, text: "Projects" },
+  { divId: `#resume`, text: "Resume" },
   { divId: `#contact`, text: "Contact" },
-  //   { divId: `/themes`, text: "Themes" },
 ];

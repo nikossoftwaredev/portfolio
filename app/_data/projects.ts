@@ -10,6 +10,16 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "Kratisix",
+    githubLink: "https://github.com/nikossoftwaredev/booking-service",
+    previewLink: "https://www.kratisix.com/en",
+    tags: ["React", "Next", "Prisma", "PostgreSQL"],
+    image: "images/projects/www.kratisix.com_en.png",
+    description:
+      "A booking service SaaS for a company that provides services to the public.",
+    chipColor: "#006DEC",
+  },
+  {
     title: "Micro Pump",
     githubLink: "https://github.com/nikossoftwaredev/pump-fun-micro-buys",
     previewLink: "https://www.micropump.fun/",

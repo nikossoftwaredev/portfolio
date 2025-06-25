@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 const MainPage = () => {
   return (
     <div className="w-full flex justify-center">
-      <span className="flex flex-col space-y-24 px-8 max-w-2xl my-24">
+      <span className="flex flex-col space-y-24 px-8 max-w-2xl my-24 pt-16">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
