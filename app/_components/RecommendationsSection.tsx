@@ -36,6 +36,18 @@ const recommendations = [
   },
   {
     id: 2,
+    text: "Nikos is incredibly fast and efficient. We worked together on Micro Pump and he consistently delivered clean code ahead of schedule. His motivation and problem-solving skills made him a great teammate.",
+    author: {
+      name: "Stelios Mavrokoukoulakis",
+      title: "Full Stack Developer",
+      company: "Instashop",
+      image: "https://avatars.githubusercontent.com/u/81311181?v=4",
+      linkedIn: "https://github.com/steliosmavro",
+    },
+    date: "January 2025",
+  },
+  {
+    id: 3,
     text: "Nikos is one of the most talented developers I've had the opportunity to work with. His attention to detail and commitment to writing maintainable. He always goes the extra mile to make sure the project is successful.",
     author: {
       name: "Manolis Thalassinos",
