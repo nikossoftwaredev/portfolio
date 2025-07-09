@@ -5,6 +5,7 @@ import Header from "@/app/_components/header/Header";
 import { Providers } from "@/app/_components/providers"; // Ensure Providers is correctly imported
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/auth-options";
+import AnimatedBackground from "@/app/_components/AnimatedBackground";
 
 const RootLayout = async ({
   children,
@@ -15,11 +16,14 @@ const RootLayout = async ({
 
   return (
     <html lang="el" data-theme="forest">
-      <body className="text-base-content bg-base-100">
+      <body className="text-base-content bg-base-100 relative">
         <Providers initialSession={session}>
-          <Header />
-          <main className="bg-base-200">{children}</main>
-          <Footer />
+          <AnimatedBackground />
+          <div className="relative z-10">
+            <Header />
+            <main className="bg-transparent">{children}</main>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

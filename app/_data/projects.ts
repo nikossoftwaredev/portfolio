@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     chipColor: "#FFBB26",
   },
   {
-    title: "Salsa Rayo",
+    title: "Salsa Rayo ⚡",
     githubLink: "https://github.com/nikossoftwaredev/salsa-rayo",
     previewLink: "https://salsarayo.com/",
     tags: ["React", "Next"],
@@ -86,7 +86,7 @@ export const PROJECTS: Project[] = [
     chipColor: "#006DEC",
   },
   {
-    title: "AI Dinos",
+    title: "AI Dinos 🦖",
     githubLink: "",
     previewLink: "https://dinos-ai.netlify.app/",
     tags: ["Machine Learning", "Neural Networks"],

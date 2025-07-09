@@ -10,7 +10,7 @@ const TextField = (props: TextFieldProps) => {
   const { className = "" } = props;
 
   return (
-    <input {...props} className={`input input-bordered w-full ${className}`} />
+    <input {...props} className={`input input-bordered w-full rounded-md ${className}`} />
   );
 };
 
