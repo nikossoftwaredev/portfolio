@@ -20,6 +20,16 @@ export const PROJECTS: Project[] = [
     chipColor: "#006DEC",
   },
   {
+    title: "Query Bee",
+    githubLink: "https://github.com/nikossoftwaredev/query-bee",
+    previewLink: "https://ai.sftgroup.gr",
+    tags: ["Next.js", "Python", "RAG"],
+    image: "images/projects/ai.sftgroup.gr.webp",
+    description:
+      "An intelligent chatbot platform designed for academic research. Helps students and researchers query university papers, theses, and academic documents using advanced AI-powered semantic search and natural language processing.",
+    chipColor: "#FFA500",
+  },
+  {
     title: "Micro Pump",
     githubLink: "https://github.com/nikossoftwaredev/pump-fun-micro-buys",
     previewLink: "https://www.micropump.fun/",
