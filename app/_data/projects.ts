@@ -16,17 +16,17 @@ export const PROJECTS: Project[] = [
     tags: ["React", "Next", "Prisma", "PostgreSQL"],
     image: "images/projects/www.kratisix.com_en.png",
     description:
-      "A booking service SaaS for a company that provides services to the public.",
+      "A booking service SaaS for any company that wants a booking system.",
     chipColor: "#006DEC",
   },
   {
     title: "Query Bee",
-    githubLink: "https://github.com/nikossoftwaredev/query-bee",
-    previewLink: "https://ai.sftgroup.gr",
+    githubLink: "",
+    previewLink: "http://ai.sftgroup.gr",
     tags: ["Next.js", "Python", "RAG"],
     image: "images/projects/ai.sftgroup.gr.webp",
     description:
-      "An intelligent chatbot platform designed for academic research. Helps students and researchers query university papers, theses, and academic documents using advanced AI-powered semantic search and natural language processing.",
+      "An intelligent chatbot platform designed for academic research.",
     chipColor: "#FFA500",
   },
   {
