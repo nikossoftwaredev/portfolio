@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/nikossoftwaredev/salsa-rayo",
     previewLink: "https://salsarayo.com/",
     tags: ["React", "Next"],
-    image: "images/projects/salsa-rayo.vercel.app_.png",
+    image: "images/projects/salsa-rayo.com.webp",
     description:
       "A website for a salsa school that offers salsa classes and events.",
   },
